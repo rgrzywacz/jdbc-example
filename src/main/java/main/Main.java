@@ -37,6 +37,7 @@ public class Main {
         CategoryDAO categoryDAO = new CategoryDAO();
         int result = categoryDAO.insert("Książka kucharska", "KITCHEN2");
         System.out.println(result);
+        categoryDAO.deleteByCode("KITCHEN2");
 
 
     }
